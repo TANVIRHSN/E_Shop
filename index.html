@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-gradient {
+      background: linear-gradient(90deg, #1a237e 0%, #457274 100%);
+    }
+
+    @keyframes slide {
+
+      0%,
+      20% {
+        transform: translateX(0%);
+      }
+
+      25%,
+      45% {
+        transform: translateX(-100%);
+      }
+
+      50%,
+      70% {
+        transform: translateX(-200%);
+      }
+
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    .animate-slide {
+      animation: slide 20s infinite ease-in-out;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #4cba16;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      z-index: 50;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-400 to-black text-gray-800">
+
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-cyan-600">MyShop</div>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="text-gray-700 hover:text-cyan-500">Home</a></li>
+      
+      <li><a href="#" class="text-gray-700 hover:text-cyan-500"> About </a></li>
+
+      <li><a href="ptp.html" class="text-gray-700 hover:text-cyan-500">Cart</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient overflow-hidden mt-0 pt-0">
+    <div class="flex animate-slide">
+      <!-- Slide 1 -->
+      <div class="w-full flex-shrink-0">
+        <div class="flex items-center px-6 py-20">
+          <!-- Left Content -->
+          <div class="w-1/2 text-white">
+            <h1 class="text-6xl font-bold mb-6">
+              <span class="text-cyan-400">Limited Edition</span><br>
+              <span class="text-cyan-400">Exclusive Drops</span><br>
+              <span class="text-cyan-400">Premium Collection</span>
+            </h1>
+            <p class="text-gray-300 mb-8">
+              Get your hands on our limited edition pieces. These exclusive designs are
+              available for a short time only. Don't miss out!
+            </p>
+            <button class="border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg">
+              BUY NOW
+            </button>
+          </div>
+          <!-- Right Image -->
+          <div class="w-1/2 flex justify-center">
+            <img src="p.jpg" alt="Product" class="w-full max-w-md h-auto object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="w-full flex-shrink-0">
+        <div class="flex items-center px-6 py-20">
+          <!-- Left Content -->
+          <div class="w-1/2 text-white">
+            <h1 class="text-6xl font-bold mb-6">
+              <span class="text-cyan-400">Limited Edition</span><br>
+              <span class="text-cyan-400">Exclusive Drops</span><br>
+              <span class="text-cyan-400">Premium Collection</span>
+            </h1>
+            <p class="text-gray-300 mb-8">
+              Get your hands on our limited edition pieces. These exclusive designs are
+              available for a short time only. Don't miss out!
+            </p>
+            <button class="border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg">
+              BUY NOW
+            </button>
+          </div>
+          <!-- Right Image -->
+          <div class="w-1/2 flex justify-center">
+            <img src="o.jpg" alt="Product" class="w-full max-w-md h-auto object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="w-full flex-shrink-0">
+        <div class="flex items-center px-6 py-20">
+          <!-- Left Content -->
+          <div class="w-1/2 text-white">
+            <h1 class="text-6xl font-bold mb-6">
+              <span class="text-cyan-400">Limited Edition</span><br>
+              <span class="text-cyan-400">Exclusive Drops</span><br>
+              <span class="text-cyan-400">Premium Collection</span>
+            </h1>
+            <p class="text-gray-300 mb-8">
+              Get your hands on our limited edition pieces. These exclusive designs are
+              available for a short time only. Don't miss out!
+            </p>
+            <button class="border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg">
+              BUY NOW
+            </button>
+          </div>
+          <!-- Right Image -->
+          <div class="w-1/2 flex justify-center">
+            <img src="g.jpg" alt="Product" class="w-full max-w-md h-auto object-cover rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="product-list" class="mt-10 px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+  </section>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">Item added to cart!</div>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 mt-10 shadow-inner">
+    <p class="text-gray-600">&copy; 2025 MyShop. All rights reserved.</p>
+    <p class="text-gray-600">Follow us on
+      <a href="#" class="text-cyan-600">Instagram</a>,
+      <a href="#" class="text-cyan-600">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
